@@ -26,27 +26,51 @@ A Laravel 11 mini-market application where you can:
 
 ## ⚙️ Setup Instructions
 
-Clone the repo:
+Clone the repo:  
+```bash
 git clone https://github.com/Mahrat22/Mini-market.git
 cd Mini-market
-Install dependencies:
+```
+
+Install dependencies:  
+```bash
 composer install
-Set up environment:
+```
+
+Set up environment:  
+```bash
 cp .env.example .env
-Configure .env database section:
+```
+
+Configure `.env` database section:  
+```
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
 DB_DATABASE=mini_market
 DB_USERNAME=root
 DB_PASSWORD=
-Generate app key:
+```
+
+Generate app key:  
+```bash
 php artisan key:generate
-Run migrations:
+```
+
+Run migrations:  
+```bash
 php artisan migrate
-Start local server:
+```
+
+Start local server:  
+```bash
 php artisan serve
-Visit: http://127.0.0.1:8000
+```
+
+Visit:  
+[http://127.0.0.1:8000](http://127.0.0.1:8000)
+
+---
+
 ## 👤 Author
 **Mohamad Mahrat**
-
