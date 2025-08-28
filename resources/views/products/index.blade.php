@@ -87,9 +87,15 @@
               </td>
               <td class="text-end">
                 <a href="{{ route('products.edit',$p) }}" class="btn btn-sm btn-outline-secondary">Edit</a>
+
                 <form action="{{ route('products.destroy',$p) }}" method="post" class="d-inline">
                   @csrf @method('DELETE')
                   <button class="btn btn-sm btn-danger" onclick="return confirm('Delete this product?')">Delete</button>
+                </form>
+
+                <form action="{{ route('cart.add', $p) }}" method="post" class="d-inline">
+                  @csrf
+                  <button class="btn btn-sm btn-success">Add to Cart</button>
                 </form>
               </td>
             </tr>

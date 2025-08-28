@@ -38,6 +38,11 @@
         <dt class="col-sm-3 text-muted">Description</dt>
         <dd class="col-sm-9">{{ $product->description ?: '—' }}</dd>
       </dl>
+
+      <form method="post" action="{{ route('cart.add', $product) }}">
+        @csrf
+        <button class="btn btn-success mt-3">Add to Cart</button>
+      </form>
     </div>
   </div>
 @endsection
